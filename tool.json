@@ -1,0 +1,178 @@
+{
+  "tool": {
+    "id": "peso-ideal-e-ajustado",
+    "title": "Peso ideal e peso ajustado",
+    "short": "Fórmula de Devine e peso ajustado para obesos",
+    "desc": "Calcule o peso ideal pela fórmula de Devine e o peso ajustado (peso ideal + 40% do excesso), usados em doses de medicamentos e em nutrição.",
+    "lead": "Estima o peso ideal pela altura e sexo (Devine) e o peso ajustado para pacientes com obesidade, usados no cálculo de doses e de necessidades nutricionais.",
+    "spec": [
+      "nutrologia",
+      "clinica-medica",
+      "medicina-intensiva",
+      "anestesiologia",
+      "nefrologia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "sexo",
+        "Sexo",
+        "radio",
+        {
+          "opts": {
+            "F": "Feminino",
+            "M": "Masculino"
+          }
+        }
+      ],
+      [
+        "altura",
+        "Altura",
+        "num",
+        {
+          "min": 120,
+          "max": 230,
+          "step": 0.5,
+          "unit": "cm",
+          "ph": "170"
+        }
+      ],
+      [
+        "peso",
+        "Peso real (para o peso ajustado)",
+        "num",
+        {
+          "min": 25,
+          "max": 350,
+          "step": 0.1,
+          "unit": "kg",
+          "ph": "90",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>Peso ideal (Devine):</strong> homens 50 kg + 2,3 kg por polegada acima de 5 pés; mulheres 45,5 kg + 2,3 kg por polegada acima de 5 pés. Em centímetros: 50 (ou 45,5) + 2,3 × (altura − 152,4) ÷ 2,54.</p><p><strong>Peso ajustado</strong> = peso ideal + 0,4 × (peso real − peso ideal).</p>",
+    "table": [
+      [
+        "Situação",
+        "Peso usado com frequência"
+      ],
+      [
+        "Peso real ≤ ideal",
+        "Peso real"
+      ],
+      [
+        "Peso real até 120% do ideal",
+        "Peso real ou ideal, conforme o fármaco"
+      ],
+      [
+        "Peso real &gt; 120% do ideal (obesidade)",
+        "Peso ajustado para aminoglicosídeos e fármacos hidrofílicos; peso ideal para ventilação mecânica (volume corrente)"
+      ]
+    ],
+    "table_note": "O fator 0,4 foi proposto para a distribuição de aminoglicosídeos no tecido adiposo; cada fármaco tem sua recomendação.",
+    "tips": [
+      "Devine publicou a fórmula em 1974 para dosar gentamicina, sem derivação populacional: é uma convenção, não o \"peso saudável\" do paciente.",
+      "No ajuste do volume corrente da ventilação protetora (6 mL/kg), use o peso predito (ARDSNet), cuja fórmula é quase idêntica à de Devine.",
+      "Para a meta calórica e proteica em obesos, as diretrizes de nutrição usam peso ideal ou ajustado conforme o IMC: confira a diretriz que você segue.",
+      "Abaixo de 152 cm a fórmula perde validade e pode dar valores muito baixos; nesses pacientes, prefira o peso real ou o IMC-alvo × altura²."
+    ],
+    "sources": [
+      [
+        "Pai MP, Paloucek FP. The origin of the \"ideal\" body weight equations. Ann Pharmacother, 2000.",
+        "https://doi.org/10.1345/aph.19381"
+      ]
+    ],
+    "cases": [
+      [
+        "Homem 180 cm: peso ideal 75,0 kg",
+        {
+          "sexo": "M",
+          "altura": 180
+        },
+        {
+          "raw": {
+            "ibw": 74.99
+          },
+          "main": "75,0",
+          "level": "info"
+        }
+      ],
+      [
+        "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        {
+          "sexo": "M",
+          "altura": 180,
+          "peso": 120
+        },
+        {
+          "raw": {
+            "ibw": 74.99,
+            "abw": 93,
+            "pct": 160
+          },
+          "verdict": "peso ajustado",
+          "tol": 0.1
+        }
+      ],
+      [
+        "Mulher 165 cm: peso ideal 56,9 kg",
+        {
+          "sexo": "F",
+          "altura": 165
+        },
+        {
+          "raw": {
+            "ibw": 56.91
+          },
+          "main": "56,9"
+        }
+      ],
+      [
+        "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        {
+          "sexo": "M",
+          "altura": 152.4
+        },
+        {
+          "raw": {
+            "ibw": 50
+          },
+          "main": "50,0"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}

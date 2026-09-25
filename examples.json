@@ -1,0 +1,80 @@
+[
+  {
+    "label": "Homem 180 cm: peso ideal 75,0 kg",
+    "input": {
+      "sexo": "M",
+      "altura": 180
+    },
+    "expected": {
+      "raw": {
+        "ibw": 74.99
+      },
+      "main": "75,0",
+      "level": "info"
+    },
+    "originalInput": {
+      "sexo": "M",
+      "altura": 180
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+    "input": {
+      "sexo": "M",
+      "altura": 180,
+      "peso": 120
+    },
+    "expected": {
+      "raw": {
+        "ibw": 74.99,
+        "abw": 93,
+        "pct": 160
+      },
+      "verdict": "peso ajustado",
+      "tol": 0.1
+    },
+    "originalInput": {
+      "sexo": "M",
+      "altura": 180,
+      "peso": 120
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Mulher 165 cm: peso ideal 56,9 kg",
+    "input": {
+      "sexo": "F",
+      "altura": 165
+    },
+    "expected": {
+      "raw": {
+        "ibw": 56.91
+      },
+      "main": "56,9"
+    },
+    "originalInput": {
+      "sexo": "F",
+      "altura": 165
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+    "input": {
+      "sexo": "M",
+      "altura": 152.4
+    },
+    "expected": {
+      "raw": {
+        "ibw": 50
+      },
+      "main": "50,0"
+    },
+    "originalInput": {
+      "sexo": "M",
+      "altura": 152.4
+    },
+    "expandedZeroOptions": []
+  }
+]
