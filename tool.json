@@ -5,6 +5,7 @@
     "short": "Fórmula de Devine e peso ajustado para obesos",
     "desc": "Calcule o peso ideal pela fórmula de Devine e o peso ajustado (peso ideal + 40% do excesso), usados em doses de medicamentos e em nutrição.",
     "lead": "Estima o peso ideal pela altura e sexo (Devine) e o peso ajustado para pacientes com obesidade, usados no cálculo de doses e de necessidades nutricionais.",
+    "kind": "Calculadora",
     "spec": [
       "nutrologia",
       "clinica-medica",
@@ -12,7 +13,6 @@
       "anestesiologia",
       "nefrologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "sexo",
@@ -52,31 +52,6 @@
       ]
     ],
     "formula": "<p><strong>Peso ideal (Devine):</strong> homens 50 kg + 2,3 kg por polegada acima de 5 pés; mulheres 45,5 kg + 2,3 kg por polegada acima de 5 pés. Em centímetros: 50 (ou 45,5) + 2,3 × (altura − 152,4) ÷ 2,54.</p><p><strong>Peso ajustado</strong> = peso ideal + 0,4 × (peso real − peso ideal).</p>",
-    "table": [
-      [
-        "Situação",
-        "Peso usado com frequência"
-      ],
-      [
-        "Peso real ≤ ideal",
-        "Peso real"
-      ],
-      [
-        "Peso real até 120% do ideal",
-        "Peso real ou ideal, conforme o fármaco"
-      ],
-      [
-        "Peso real &gt; 120% do ideal (obesidade)",
-        "Peso ajustado para aminoglicosídeos e fármacos hidrofílicos; peso ideal para ventilação mecânica (volume corrente)"
-      ]
-    ],
-    "table_note": "O fator 0,4 foi proposto para a distribuição de aminoglicosídeos no tecido adiposo; cada fármaco tem sua recomendação.",
-    "tips": [
-      "Devine publicou a fórmula em 1974 para dosar gentamicina, sem derivação populacional: é uma convenção, não o \"peso saudável\" do paciente.",
-      "No ajuste do volume corrente da ventilação protetora (6 mL/kg), use o peso predito (ARDSNet), cuja fórmula é quase idêntica à de Devine.",
-      "Para a meta calórica e proteica em obesos, as diretrizes de nutrição usam peso ideal ou ajustado conforme o IMC: confira a diretriz que você segue.",
-      "Abaixo de 152 cm a fórmula perde validade e pode dar valores muito baixos; nesses pacientes, prefira o peso real ou o IMC-alvo × altura²."
-    ],
     "sources": [
       [
         "Pai MP, Paloucek FP. The origin of the \"ideal\" body weight equations. Ann Pharmacother, 2000.",
@@ -142,9 +117,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -153,17 +125,357 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:11:12.303Z",
+      "total": 64,
+      "passed": 64,
+      "sourceRowCount": 64,
+      "uniqueApiInputCount": 64,
+      "sourceContextCount": 64,
+      "scope": "64 selected Devine inch-equation and0.4adjusted-weight arithmetic scenarios, supported by NBA2025 institutional IVIG context. Height>=152.4cm, exact2.54cm/in; original formula/history and other source editions retained. No general drug-dose or patient applicability approval.",
+      "originalSourceRowCount": 64,
+      "localRejectionContractCount": 0,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "4df53cb971b12e4ebd039a5a7669557a6d8349e395dfcd4db320bc5476726a50",
+        "total": 64,
+        "bankRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "fullStoredSourceRows": 64,
+        "localRejectionContractCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-physiology-independent-expectations-final31-r2.json",
+            "sha256": "bc426fb2ff7230f076e54fd4cb9ed20eb528f60466a7e74aefd8be54da17da89"
+          },
+          {
+            "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+            "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+          },
+          {
+            "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+            "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+          "sha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32"
+        },
+        "packagingRequirement": "Artifact contains all429original source rows across6methods, split424accepted numericcases+5separate local rejection contracts. Preserve source indices, original mathematical expectations and old sample precision expectations."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 64,
+        "uniqueApiInputs": 64,
+        "duplicateRows": 0
+      },
+      "sources": [
+        {
+          "rootPrimaryReview": {
+            "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+            "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+          },
+          "independentPrimaryReview": {
+            "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+            "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+          },
+          "targetedReadings": [
+            {
+              "id": "peso-ideal-e-ajustado",
+              "url": "https://www.blood.gov.au/sites/default/files/documents/2025-01/Adjusting%20Immunoglobulin%20dose%20for%20ideal%20body%20weight.pdf",
+              "edition": "NationalBloodAuthority2025 IVIG dose-weight explanatory sheet",
+              "access": "Actual official one-page PDF web reader opened and read. Source restrictions and inch-based equation read.",
+              "readScope": "Male50/female45.5+2.3(heightInches−60); dose-weight adjustment ideal+0.4(actual−ideal). Source excludes<18,height<152cm,pregnancy; other clinical instructions are outside arithmetic proof.",
+              "selectedScope": "Own vectors height>=152.4cm and actual>ideal; exact SI2.54cm/in for the inch equation, and0.4 arithmetic only in stated IVIG context.",
+              "excluded": [
+                "General medication dosing",
+                "Pregnancy/children/short stature",
+                "Clinical actual-below-ideal rule, BMI indices and dose decision"
+              ]
+            }
+          ],
+          "declaredOriginalMethodVersion": "Devine 1974/Robinson 1983/Miller 1983; revisão Pai Paloucek 2000; pesoajustado fatorlocal 0,4",
+          "sourceEditionsUnchanged": true,
+          "scope": "64 selected Devine inch-equation and0.4adjusted-weight arithmetic scenarios, supported by NBA2025 institutional IVIG context. Height>=152.4cm, exact2.54cm/in; original formula/history and other source editions retained. No general drug-dose or patient applicability approval."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+      "evidenceSha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/root-physiology-independent-peer-publication-final31-r3.json",
+          "sha256": "2117b8908ee7ab1a8787ead1ce59bb3d3a422dbfe57d83501d746e9dcfbccd91"
+        },
+        "status": "passed-scoped-mathematical",
+        "ownNormalDistQuantilesIndependent": true,
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+          "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+          "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+          "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+        }
+      ],
+      "qualifications": [
+        "64 selected Devine inch-equation and0.4adjusted-weight arithmetic scenarios, supported by NBA2025 institutional IVIG context. Height>=152.4cm, exact2.54cm/in; original formula/history and other source editions retained. No general drug-dose or patient applicability approval.",
+        "Continuous selected fields preserve the original source31R2 criterion1e-11×max(1,abs expected); integer/string fields use exact equality. Parent original fixtures/tolerances and all862historic source cases remain unchanged.",
+        "Three implementations and original actual Node/VM/Chromium captures are hash bound. Fresh Node/VM and complete-bank helper replays are separate from served portal, UI or new build gates.",
+        "Independent expected values: root initial429 mathematically authored before its imports; only84sample expecteds were revised to independently evaluated six-decimal quantiles with old printed-prose expected retained. Independent peer used NormalDist rather than root numerical-integration series.",
+        "No compensation/clinical diagnosis, exercise prediction/FAI, universally applicable dose,1969reticulocyte hard boundaries,44week clinical threshold, study-design suitability, professional language, rights or full-method approval.",
+        "Source28/29/30 and sample documentary amendment are independent ownership: compose evidence leaves over the latest source and recompute counters rather than replacing old whole catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Devine 1974/Robinson 1983/Miller 1983; revisão Pai Paloucek 2000; pesoajustado fatorlocal 0,4",
+    "implementationVersion": "peso-ideal-e-ajustado@native-2026-10-03+2460d05a7311",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/10981254/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Peso ideal (Devine): homens 50 kg + 2,3 kg por polegada acima de 5 pés; mulheres 45,5 kg + 2,3 kg por polegada acima de 5 pés. Em centímetros: 50 (ou 45,5) + 2,3 × (altura − 152,4) ÷ 2,54. Peso ajustado = peso ideal + 0,4 × (peso real − peso ideal).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "sexo",
+            "label": "Sexo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "F": "Feminino",
+              "M": "Masculino"
+            }
+          },
+          {
+            "key": "altura",
+            "label": "Altura",
+            "type": "num",
+            "min": 120,
+            "max": 230,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "peso",
+            "label": "Peso real (para o peso ajustado)",
+            "type": "num",
+            "min": 25,
+            "max": 350,
+            "unit": "kg",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "f70d141b818053b7310824a9dfc0b7ab6f60fffecada426e921085bf127189f3"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Pai MP, Paloucek FP. The origin of the \"ideal\" body weight equations. Ann Pharmacother, 2000.",
+          "url": "https://doi.org/10.1345/aph.19381",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The origin of the \"ideal\" body weight equations.",
+            "year": "2000",
+            "firstPublicationDate": "2000-09-01",
+            "doi": "10.1345/aph.19381",
+            "pmid": "10981254",
+            "journal": "The Annals of pharmacotherapy",
+            "authors": "Pai MP, Paloucek FP."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/10981254/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "6c7d4200680d933986efc6351d774fd92f5537d2a75d443ec69f642583429e42",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:11:12.303Z",
+        "total": 64,
+        "passed": 64,
+        "sourceRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "scope": "64 selected Devine inch-equation and0.4adjusted-weight arithmetic scenarios, supported by NBA2025 institutional IVIG context. Height>=152.4cm, exact2.54cm/in; original formula/history and other source editions retained. No general drug-dose or patient applicability approval.",
+        "originalSourceRowCount": 64,
+        "localRejectionContractCount": 0,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "4df53cb971b12e4ebd039a5a7669557a6d8349e395dfcd4db320bc5476726a50",
+          "total": 64,
+          "bankRowCount": 64,
+          "uniqueApiInputCount": 64,
+          "sourceContextCount": 64,
+          "fullStoredSourceRows": 64,
+          "localRejectionContractCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-physiology-independent-expectations-final31-r2.json",
+              "sha256": "bc426fb2ff7230f076e54fd4cb9ed20eb528f60466a7e74aefd8be54da17da89"
+            },
+            {
+              "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+              "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+            },
+            {
+              "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+              "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+            "sha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32"
+          },
+          "packagingRequirement": "Artifact contains all429original source rows across6methods, split424accepted numericcases+5separate local rejection contracts. Preserve source indices, original mathematical expectations and old sample precision expectations."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 64,
+          "uniqueApiInputs": 64,
+          "duplicateRows": 0
+        },
+        "sources": [
+          {
+            "rootPrimaryReview": {
+              "file": "reports/review-20261003/root-physiology-primary-source-review-final31.json",
+              "sha256": "f5ccf9103d09b716bdfa382beb8ff2ec10398f00ef7e9dabdb1f8c1e1bad5a9b"
+            },
+            "independentPrimaryReview": {
+              "file": "reports/review-20261003/root-physiology-primary-independent-review-publication-final31.json",
+              "sha256": "1e217f15dd23ca326014d4453efd10d59ec5e196fc311993f763ae12ee5b82c6"
+            },
+            "targetedReadings": [
+              {
+                "id": "peso-ideal-e-ajustado",
+                "url": "https://www.blood.gov.au/sites/default/files/documents/2025-01/Adjusting%20Immunoglobulin%20dose%20for%20ideal%20body%20weight.pdf",
+                "edition": "NationalBloodAuthority2025 IVIG dose-weight explanatory sheet",
+                "access": "Actual official one-page PDF web reader opened and read. Source restrictions and inch-based equation read.",
+                "readScope": "Male50/female45.5+2.3(heightInches−60); dose-weight adjustment ideal+0.4(actual−ideal). Source excludes<18,height<152cm,pregnancy; other clinical instructions are outside arithmetic proof.",
+                "selectedScope": "Own vectors height>=152.4cm and actual>ideal; exact SI2.54cm/in for the inch equation, and0.4 arithmetic only in stated IVIG context.",
+                "excluded": [
+                  "General medication dosing",
+                  "Pregnancy/children/short stature",
+                  "Clinical actual-below-ideal rule, BMI indices and dose decision"
+                ]
+              }
+            ],
+            "declaredOriginalMethodVersion": "Devine 1974/Robinson 1983/Miller 1983; revisão Pai Paloucek 2000; pesoajustado fatorlocal 0,4",
+            "sourceEditionsUnchanged": true,
+            "scope": "64 selected Devine inch-equation and0.4adjusted-weight arithmetic scenarios, supported by NBA2025 institutional IVIG context. Height>=152.4cm, exact2.54cm/in; original formula/history and other source editions retained. No general drug-dose or patient applicability approval."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/root-physiology-independent-source-check-final31-r2.json",
+        "evidenceSha256": "a8df3bff60f64099bd601fa79c0f9e5bd9724d2fdc3bc1770726ac3941a2fd32",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/root-physiology-independent-peer-publication-final31-r3.json",
+            "sha256": "2117b8908ee7ab1a8787ead1ce59bb3d3a422dbfe57d83501d746e9dcfbccd91"
+          },
+          "status": "passed-scoped-mathematical",
+          "ownNormalDistQuantilesIndependent": true,
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+            "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+            "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+            "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+          }
+        ],
+        "qualifications": [
+          "64 selected Devine inch-equation and0.4adjusted-weight arithmetic scenarios, supported by NBA2025 institutional IVIG context. Height>=152.4cm, exact2.54cm/in; original formula/history and other source editions retained. No general drug-dose or patient applicability approval.",
+          "Continuous selected fields preserve the original source31R2 criterion1e-11×max(1,abs expected); integer/string fields use exact equality. Parent original fixtures/tolerances and all862historic source cases remain unchanged.",
+          "Three implementations and original actual Node/VM/Chromium captures are hash bound. Fresh Node/VM and complete-bank helper replays are separate from served portal, UI or new build gates.",
+          "Independent expected values: root initial429 mathematically authored before its imports; only84sample expecteds were revised to independently evaluated six-decimal quantiles with old printed-prose expected retained. Independent peer used NormalDist rather than root numerical-integration series.",
+          "No compensation/clinical diagnosis, exercise prediction/FAI, universally applicable dose,1969reticulocyte hard boundaries,44week clinical threshold, study-design suitability, professional language, rights or full-method approval.",
+          "Source28/29/30 and sample documentary amendment are independent ownership: compose evidence leaves over the latest source and recompute counters rather than replacing old whole catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+    },
+    "limits": "Peso ideal é uma estimativa de tabelas altura/peso e não é medida de massa magra. A relação farmacocinética varia por medicamento; não existe confirmação neste resumo de fator ajustado universal 0,4. A escolha do peso para dose deve seguir a fonte do fármaco e a população correspondente.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.106Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não confirma fator ajustado local 0,4, coeficientes individuais ou uso pediátrico/gestação. Dose precisa da fonte específica do medicamento."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+    "bytes": 5241,
+    "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "808d97c353c6b52ff545c2f71d49e02f91e4928dcac2890b7ed3536992c291ba",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "e9b1eb682ed680831ccedfece4b2f1b2a664d25f59c8097a0d3a7e05c1720ace",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "e9b1eb682ed680831ccedfece4b2f1b2a664d25f59c8097a0d3a7e05c1720ace",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,6 +1,13 @@
 [
   {
-    "label": "Homem 180 cm: peso ideal 75,0 kg",
+    "id": "peso-ideal-e-ajustado",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Homem 180 cm: peso ideal 75,0 kg",
+    "originalInput": {
+      "sexo": "M",
+      "altura": 180
+    },
     "input": {
       "sexo": "M",
       "altura": 180
@@ -12,14 +19,35 @@
       "main": "75,0",
       "level": "info"
     },
-    "originalInput": {
-      "sexo": "M",
-      "altura": 180
+    "recordedResult": {
+      "main": [
+        "75,0",
+        "kg"
+      ],
+      "label": "Peso ideal (Devine)",
+      "raw": {
+        "ibw": 74.99212598425196
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+    "id": "peso-ideal-e-ajustado",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+    "originalInput": {
+      "sexo": "M",
+      "altura": 180,
+      "peso": 120
+    },
     "input": {
       "sexo": "M",
       "altura": 180,
@@ -34,15 +62,36 @@
       "verdict": "peso ajustado",
       "tol": 0.1
     },
-    "originalInput": {
-      "sexo": "M",
-      "altura": 180,
-      "peso": 120
+    "recordedResult": {
+      "main": [
+        "75,0",
+        "kg"
+      ],
+      "label": "Peso ideal (Devine)",
+      "raw": {
+        "ibw": 74.99212598425196,
+        "abw": 92.99527559055117,
+        "pct": 160.01679966400675
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Mulher 165 cm: peso ideal 56,9 kg",
+    "id": "peso-ideal-e-ajustado",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Mulher 165 cm: peso ideal 56,9 kg",
+    "originalInput": {
+      "sexo": "F",
+      "altura": 165
+    },
     "input": {
       "sexo": "F",
       "altura": 165
@@ -53,14 +102,34 @@
       },
       "main": "56,9"
     },
-    "originalInput": {
-      "sexo": "F",
-      "altura": 165
+    "recordedResult": {
+      "main": [
+        "56,9",
+        "kg"
+      ],
+      "label": "Peso ideal (Devine)",
+      "raw": {
+        "ibw": 56.90944881889763
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+    "id": "peso-ideal-e-ajustado",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+    "originalInput": {
+      "sexo": "M",
+      "altura": 152.4
+    },
     "input": {
       "sexo": "M",
       "altura": 152.4
@@ -71,10 +140,23 @@
       },
       "main": "50,0"
     },
-    "originalInput": {
-      "sexo": "M",
-      "altura": 152.4
+    "recordedResult": {
+      "main": [
+        "50,0",
+        "kg"
+      ],
+      "label": "Peso ideal (Devine)",
+      "raw": {
+        "ibw": 50
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
