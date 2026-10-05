@@ -1,0 +1,853 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "peso-ideal-e-ajustado",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+    "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb",
+    "bytes": 5241
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "peso-ideal-e-ajustado",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Homem 180 cm: peso ideal 75,0 kg",
+      "originalInput": {
+        "sexo": "M",
+        "altura": 180
+      },
+      "input": {
+        "sexo": "M",
+        "altura": 180
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ibw": 74.99
+        },
+        "main": "75,0",
+        "level": "info"
+      },
+      "recordedResult": {
+        "main": [
+          "75,0",
+          "kg"
+        ],
+        "label": "Peso ideal (Devine)",
+        "raw": {
+          "ibw": 74.99212598425196
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "M",
+            "altura": 180
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+          "startedAt": "2026-10-05T17:39:25.012Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "peso-ideal-e-ajustado",
+              "main": [
+                "75,0",
+                "kg"
+              ],
+              "label": "Peso ideal (Devine)",
+              "raw": {
+                "ibw": 74.99212598425196
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e9f2ff08241a8218320239fba4fe5a3225c80e21745c4102c2dea2ab604d3cc3",
+          "bytes": 161,
+          "elapsedMs": 6.127500000002328
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+        "startedAt": "2026-10-05T17:39:25.012Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "peso-ideal-e-ajustado",
+            "main": [
+              "75,0",
+              "kg"
+            ],
+            "label": "Peso ideal (Devine)",
+            "raw": {
+              "ibw": 74.99212598425196
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e9f2ff08241a8218320239fba4fe5a3225c80e21745c4102c2dea2ab604d3cc3",
+        "bytes": 161,
+        "elapsedMs": 6.127500000002328
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "75,0",
+            "obtained": "75,0",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibw",
+            "expected": 74.99,
+            "obtained": 74.99212598425196,
+            "tolerance": 0.00500001,
+            "difference": 0.0021259842519611993,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibw",
+            "expected": 74.99212598425196,
+            "obtained": 74.99212598425196,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "75,0",
+            "obtained": "75,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kg",
+            "obtained": "kg",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "peso-ideal-e-ajustado",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+      "originalInput": {
+        "sexo": "M",
+        "altura": 180,
+        "peso": 120
+      },
+      "input": {
+        "sexo": "M",
+        "altura": 180,
+        "peso": 120
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ibw": 74.99,
+          "abw": 93,
+          "pct": 160
+        },
+        "verdict": "peso ajustado",
+        "tol": 0.1
+      },
+      "recordedResult": {
+        "main": [
+          "75,0",
+          "kg"
+        ],
+        "label": "Peso ideal (Devine)",
+        "raw": {
+          "ibw": 74.99212598425196,
+          "abw": 92.99527559055117,
+          "pct": 160.01679966400675
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "M",
+            "altura": 180,
+            "peso": 120
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+          "startedAt": "2026-10-05T17:39:25.313Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "peso-ideal-e-ajustado",
+              "main": [
+                "75,0",
+                "kg"
+              ],
+              "label": "Peso ideal (Devine)",
+              "raw": {
+                "ibw": 74.99212598425196,
+                "abw": 92.99527559055117,
+                "pct": 160.01679966400675
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "f8852bc58380d805506696d6084c2c3b9aeac5a2d2c63a6900e019485911b6d0",
+          "bytes": 210,
+          "elapsedMs": 4.114299999986542
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+        "startedAt": "2026-10-05T17:39:25.313Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "peso-ideal-e-ajustado",
+            "main": [
+              "75,0",
+              "kg"
+            ],
+            "label": "Peso ideal (Devine)",
+            "raw": {
+              "ibw": 74.99212598425196,
+              "abw": 92.99527559055117,
+              "pct": 160.01679966400675
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "f8852bc58380d805506696d6084c2c3b9aeac5a2d2c63a6900e019485911b6d0",
+        "bytes": 210,
+        "elapsedMs": 4.114299999986542
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibw",
+            "expected": 74.99,
+            "obtained": 74.99212598425196,
+            "tolerance": 0.1,
+            "difference": 0.0021259842519611993,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.abw",
+            "expected": 93,
+            "obtained": 92.99527559055117,
+            "tolerance": 0.1,
+            "difference": 0.00472440944882635,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pct",
+            "expected": 160,
+            "obtained": 160.01679966400675,
+            "tolerance": 0.1,
+            "difference": 0.016799664006754256,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibw",
+            "expected": 74.99212598425196,
+            "obtained": 74.99212598425196,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.abw",
+            "expected": 92.99527559055117,
+            "obtained": 92.99527559055117,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pct",
+            "expected": 160.01679966400675,
+            "obtained": 160.01679966400675,
+            "tolerance": 1.6001679966400675e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "75,0",
+            "obtained": "75,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kg",
+            "obtained": "kg",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "peso-ideal-e-ajustado",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Mulher 165 cm: peso ideal 56,9 kg",
+      "originalInput": {
+        "sexo": "F",
+        "altura": 165
+      },
+      "input": {
+        "sexo": "F",
+        "altura": 165
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ibw": 56.91
+        },
+        "main": "56,9"
+      },
+      "recordedResult": {
+        "main": [
+          "56,9",
+          "kg"
+        ],
+        "label": "Peso ideal (Devine)",
+        "raw": {
+          "ibw": 56.90944881889763
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "F",
+            "altura": 165
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+          "startedAt": "2026-10-05T17:39:25.625Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "peso-ideal-e-ajustado",
+              "main": [
+                "56,9",
+                "kg"
+              ],
+              "label": "Peso ideal (Devine)",
+              "raw": {
+                "ibw": 56.90944881889763
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "fd70af2ed83570eb8e8cebcb376fdef2d9c185d9dc8f43f89fa4e5a14f5ae75d",
+          "bytes": 161,
+          "elapsedMs": 6.787899999995716
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+        "startedAt": "2026-10-05T17:39:25.625Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "peso-ideal-e-ajustado",
+            "main": [
+              "56,9",
+              "kg"
+            ],
+            "label": "Peso ideal (Devine)",
+            "raw": {
+              "ibw": 56.90944881889763
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "fd70af2ed83570eb8e8cebcb376fdef2d9c185d9dc8f43f89fa4e5a14f5ae75d",
+        "bytes": 161,
+        "elapsedMs": 6.787899999995716
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "56,9",
+            "obtained": "56,9",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibw",
+            "expected": 56.91,
+            "obtained": 56.90944881889763,
+            "tolerance": 0.00500001,
+            "difference": 0.0005511811023666269,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibw",
+            "expected": 56.90944881889763,
+            "obtained": 56.90944881889763,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "56,9",
+            "obtained": "56,9",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kg",
+            "obtained": "kg",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "peso-ideal-e-ajustado",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+      "originalInput": {
+        "sexo": "M",
+        "altura": 152.4
+      },
+      "input": {
+        "sexo": "M",
+        "altura": 152.4
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ibw": 50
+        },
+        "main": "50,0"
+      },
+      "recordedResult": {
+        "main": [
+          "50,0",
+          "kg"
+        ],
+        "label": "Peso ideal (Devine)",
+        "raw": {
+          "ibw": 50
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "M",
+            "altura": 152.4
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+          "startedAt": "2026-10-05T17:39:25.938Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "peso-ideal-e-ajustado",
+              "main": [
+                "50,0",
+                "kg"
+              ],
+              "label": "Peso ideal (Devine)",
+              "raw": {
+                "ibw": 50
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "aef806b048c76100a80538a4e9865ff8c3d3068b157d878474378c03cb0acdfb",
+          "bytes": 146,
+          "elapsedMs": 3.7958999999973457
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/peso-ideal-e-ajustado/calculate",
+        "startedAt": "2026-10-05T17:39:25.938Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "peso-ideal-e-ajustado",
+            "main": [
+              "50,0",
+              "kg"
+            ],
+            "label": "Peso ideal (Devine)",
+            "raw": {
+              "ibw": 50
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "aef806b048c76100a80538a4e9865ff8c3d3068b157d878474378c03cb0acdfb",
+        "bytes": 146,
+        "elapsedMs": 3.7958999999973457
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "50,0",
+            "obtained": "50,0",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibw",
+            "expected": 50,
+            "obtained": 50,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibw",
+            "expected": 50,
+            "obtained": 50,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "50,0",
+            "obtained": "50,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "kg",
+            "obtained": "kg",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}

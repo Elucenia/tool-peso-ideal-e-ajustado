@@ -382,7 +382,25 @@
   "sourceNodeBrowserVmParity": true,
   "actualBrowserDomVerified": false,
   "newIndependentOracle": false,
-  "currentActualR6HttpEvidence": "pending",
+  "currentActualR6HttpEvidence": {
+    "path": "evidence/served-http-r6.json",
+    "bytes": 26584,
+    "sha256": "64083c9a98b9c289ebd200776b06e14322b36e11db05489f709341485b291183",
+    "sourceReceipt": {
+      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+      "bytes": 7105396,
+      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+    },
+    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+    "sourceCalculator": {
+      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/peso-ideal-e-ajustado/calculator.js",
+      "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb",
+      "bytes": 5241
+    },
+    "cases": 4,
+    "status": "passed"
+  },
   "clinicalApproval": false,
-  "professionalLanguageApproval": false
+  "professionalLanguageApproval": false,
+  "frozenSourceCurrentAdapterMatch": true
 }
