@@ -247,7 +247,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Devine 1974/Robinson 1983/Miller 1983; revisão Pai Paloucek 2000; pesoajustado fatorlocal 0,4",
-    "implementationVersion": "peso-ideal-e-ajustado@native-2026-10-03+2460d05a7311",
+    "implementationVersion": "peso-ideal-e-ajustado@native-2026-10-05+858031f7eec8",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/10981254/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -440,7 +440,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+      "implementationHash": "858031f7eec83ca624f68b6ab76dd0838f0a8643a70e0406158cb906b8f72cf3",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "peso-ideal-e-ajustado@native-2026-10-03+2460d05a7311",
+          "previousImplementationHash": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb",
+          "implementationHash": "858031f7eec83ca624f68b6ab76dd0838f0a8643a70e0406158cb906b8f72cf3",
+          "scientificBodySha256": "79083fbb616e3342b97e99bfa4d801e5f63bfdce6188546bc82c283e03d785be",
+          "metadataContractHash": "f70d141b818053b7310824a9dfc0b7ab6f60fffecada426e921085bf127189f3",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Peso ideal é uma estimativa de tabelas altura/peso e não é medida de massa magra. A relação farmacocinética varia por medicamento; não existe confirmação neste resumo de fator ajustado universal 0,4. A escolha do peso para dose deve seguir a fonte do fármaco e a população correspondente.",
     "sourceLimitEvidence": {
@@ -459,20 +487,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/peso-ideal-e-ajustado/calculator.js",
-    "bytes": 5241,
-    "sha256": "2460d05a731166a29bf1da34e4bbeff2248cd8609a16118c9865092bc667d8cb"
+    "bytes": 5446,
+    "sha256": "858031f7eec83ca624f68b6ab76dd0838f0a8643a70e0406158cb906b8f72cf3"
   },
-  "sourceToolSha256": "808d97c353c6b52ff545c2f71d49e02f91e4928dcac2890b7ed3536992c291ba",
+  "sourceToolSha256": "98c78157948c5b8ce0468e8e71d08a8d35057dc2e6a3900f5a23a158a30bde83",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "e9b1eb682ed680831ccedfece4b2f1b2a664d25f59c8097a0d3a7e05c1720ace",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "e9b1eb682ed680831ccedfece4b2f1b2a664d25f59c8097a0d3a7e05c1720ace",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

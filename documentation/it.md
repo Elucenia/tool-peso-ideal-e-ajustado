@@ -72,3 +72,32 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Peso ideale secondo la formula di Devine
+
+
+### 2
+
+Peso reale > 120% del peso ideale: per i farmaci idrofili e gli aminoglicosidi, usare il peso aggiustato
+
+| Dettagli del risultato | |
+| --- | --- |
+| Peso reale in relazione al peso ideale | 160% |
+| Peso aggiustato (IBW + 0,4 × eccesso) | 93,0 kg |
+
+
+### 3
+
+Peso ideale secondo la formula di Devine
+
+
+### 4
+
+Peso ideale secondo la formula di Devine
+

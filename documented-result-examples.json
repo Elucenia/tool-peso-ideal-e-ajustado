@@ -1,0 +1,831 @@
+{
+  "id": "peso-ideal-e-ajustado",
+  "implementationVersion": "peso-ideal-e-ajustado@native-2026-10-05+858031f7eec8",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideal pela fórmula de Devine",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso real em relação ao ideal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso ajustado (IBW + 0,4 × excesso)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "93,0 kg",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Peso real > 120% do ideal: para fármacos hidrofílicos e aminoglicosídeos, use o peso ajustado",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideal pela fórmula de Devine",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideal pela fórmula de Devine",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ideal weight by the Devine formula",
+            "locale": "en",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Actual weight relative to ideal",
+                "locale": "en",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "en",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Adjusted weight (IBW + 0,4 × excess)",
+                "locale": "en",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "93.0 kg",
+                "locale": "en",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Actual weight > 120% of ideal: for hydrophilic drugs and aminoglycosides, use adjusted weight",
+            "locale": "en",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ideal weight by the Devine formula",
+            "locale": "en",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ideal weight by the Devine formula",
+            "locale": "en",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideal según la fórmula de Devine",
+            "locale": "es",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso real en relación con el ideal",
+                "locale": "es",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "es",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso ajustado (IBW + 0,4 × exceso)",
+                "locale": "es",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "93,0 kg",
+                "locale": "es",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Peso real > 120% del ideal: para fármacos hidrofílicos y aminoglucósidos, use el peso ajustado",
+            "locale": "es",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideal según la fórmula de Devine",
+            "locale": "es",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideal según la fórmula de Devine",
+            "locale": "es",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Poids idéal selon la formule de Devine",
+            "locale": "fr",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Poids réel par rapport au poids idéal",
+                "locale": "fr",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "fr",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Poids ajusté (IBW + 0,4 × excès)",
+                "locale": "fr",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "93,0 kg",
+                "locale": "fr",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Poids réel > 120 % du poids idéal : pour les médicaments hydrophiles et les aminosides, utiliser le poids ajusté",
+            "locale": "fr",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Poids idéal selon la formule de Devine",
+            "locale": "fr",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Poids idéal selon la formule de Devine",
+            "locale": "fr",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Idealgewicht nach der Devine-Formel",
+            "locale": "de",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Tatsächliches Gewicht im Verhältnis zum Idealgewicht",
+                "locale": "de",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "de",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Adjustiertes Gewicht (IBW + 0,4 × Überschuss)",
+                "locale": "de",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "93,0 kg",
+                "locale": "de",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Tatsächliches Gewicht > 120 % des Idealgewichts: für hydrophile Arzneimittel und Aminoglykoside das adjustierte Gewicht verwenden",
+            "locale": "de",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Idealgewicht nach der Devine-Formel",
+            "locale": "de",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Idealgewicht nach der Devine-Formel",
+            "locale": "de",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideale secondo la formula di Devine",
+            "locale": "it",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Peso reale in relazione al peso ideale",
+                "locale": "it",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "it",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Peso aggiustato (IBW + 0,4 × eccesso)",
+                "locale": "it",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "93,0 kg",
+                "locale": "it",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Peso reale > 120% del peso ideale: per i farmaci idrofili e gli aminoglicosidi, usare il peso aggiustato",
+            "locale": "it",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideale secondo la formula di Devine",
+            "locale": "it",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Peso ideale secondo la formula di Devine",
+            "locale": "it",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الوزن المثالي وفقًا لصيغة ديفاين",
+            "locale": "ar",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الوزن الفعلي بالنسبة إلى الوزن المثالي",
+                "locale": "ar",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "١٦٠%",
+                "locale": "ar",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الوزن المعدل (IBW + 0,4 × الزيادة)",
+                "locale": "ar",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "٩٣٫٠ كغ",
+                "locale": "ar",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الوزن الفعلي > 120% من الوزن المثالي: بالنسبة للأدوية المحبة للماء والأمينوغليكوزيدات، استخدم الوزن المعدل",
+            "locale": "ar",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الوزن المثالي وفقًا لصيغة ديفاين",
+            "locale": "ar",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الوزن المثالي وفقًا لصيغة ديفاين",
+            "locale": "ar",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine 公式计算的理想体重",
+            "locale": "zh",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "实际体重相对于理想体重",
+                "locale": "zh",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "zh",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "调整体重（IBW + 0,4 × 超出部分）",
+                "locale": "zh",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "93.0 kg",
+                "locale": "zh",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "实际体重 > 理想体重的 120%：对于亲水性药物和氨基糖苷类药物，使用调整体重",
+            "locale": "zh",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine 公式计算的理想体重",
+            "locale": "zh",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine 公式计算的理想体重",
+            "locale": "zh",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine 式による理想体重",
+            "locale": "ja",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "理想体重に対する実体重",
+                "locale": "ja",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "ja",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "調整体重（IBW + 0,4 × 超過分）",
+                "locale": "ja",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "93.0 kg",
+                "locale": "ja",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "実体重 > 理想体重の 120%：親水性薬剤およびアミノグリコシドでは調整体重を使用する",
+            "locale": "ja",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine 式による理想体重",
+            "locale": "ja",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine 式による理想体重",
+            "locale": "ja",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Homem 180 cm: peso ideal 75,0 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine सूत्र के अनुसार आदर्श वजन",
+            "locale": "hi",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 180 cm, 120 kg: ajustado 93,0 kg (160% do ideal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "आदर्श के सापेक्ष वास्तविक वजन",
+                "locale": "hi",
+                "template": "documented-authored-a7a4c2720cca720b38d9"
+              },
+              "value": {
+                "text": "160%",
+                "locale": "hi",
+                "template": "documented-authored-aea1eb0d7751df36d339",
+                "sourceNumbers": [
+                  160
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "समायोजित वजन (IBW + 0,4 × अतिरिक्त)",
+                "locale": "hi",
+                "template": "documented-authored-dddc43953adae8acb1aa"
+              },
+              "value": {
+                "text": "93.0 किग्रा",
+                "locale": "hi",
+                "template": "documented-authored-acbe1c22bce1d49b3ede",
+                "sourceNumbers": [
+                  93
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "वास्तविक वजन > आदर्श वजन का 120%: हाइड्रोफिलिक दवाओं और अमीनोग्लाइकोसाइड्स के लिए समायोजित वजन का उपयोग करें",
+            "locale": "hi",
+            "template": "documented-authored-dd987a40ab4f4924900b"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Mulher 165 cm: peso ideal 56,9 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine सूत्र के अनुसार आदर्श वजन",
+            "locale": "hi",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "Homem 152,4 cm (5 pés): peso ideal 50 kg",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Devine सूत्र के अनुसार आदर्श वजन",
+            "locale": "hi",
+            "template": "documented-authored-0e52bba27b23602c42d7"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

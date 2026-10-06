@@ -72,3 +72,32 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Ideal weight by the Devine formula
+
+
+### 2
+
+Actual weight > 120% of ideal: for hydrophilic drugs and aminoglycosides, use adjusted weight
+
+| Result details | |
+| --- | --- |
+| Actual weight relative to ideal | 160% |
+| Adjusted weight (IBW + 0,4 × excess) | 93.0 kg |
+
+
+### 3
+
+Ideal weight by the Devine formula
+
+
+### 4
+
+Ideal weight by the Devine formula
+
